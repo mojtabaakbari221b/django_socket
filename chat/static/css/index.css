@@ -14,9 +14,13 @@ body {
 }
 
 .card {
-    width: 300px;
+    width: 60%;
     border: none;
     border-radius: 15px
+}
+
+body main div.d-flex.justify-content-center {
+    overflow-x: hidden;
 }
 
 .adiv {
@@ -88,12 +92,11 @@ textarea::placeholder {
 }
 
 textarea {
-    scrollbar-width: thin;
-    scrollbar-color: #c0c0c0 #ebebeb;
-    overflow-y: scroll;
     direction: rtl !important;
     font-size: 12px !important;
-    max-height: 30px;
+    max-height: 100px;
+    min-height: 100px;
+    height: 100px;
 }
 
 #chat div p {
@@ -106,6 +109,19 @@ textarea {
     font-size: 13px;
 }
 
-.chat {
-    min-width: 50%;
+.card {
+    min-width: 80%;
+}
+
+#chat div.flex-row.flex-row {
+    max-height: fit-content !important;
+    height: fit-content !important;
+}
+
+#send {
+    transition-duration: 100ms;
+}
+
+#send:hover {
+    color: #2c5f92;
 }

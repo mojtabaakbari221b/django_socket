@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'echo/', include('echo.urls')),
     url(r'chat/', include('chat.urls')),
+    url(r'cc/', include('cryptocurrency.urls')),
 ]

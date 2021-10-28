@@ -1,3 +1,5 @@
 from django.contrib import admin
-
-# Register your models here.
+from . import models
+admin.site.register(models.Coin)
+admin.site.register(models.Technical_Analysis)
+admin.site.register(models.Event)

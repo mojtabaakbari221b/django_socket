@@ -23,8 +23,8 @@ application = ProtocolTypeRouter({
     "websocket": AuthMiddlewareStack(
         URLRouter(
             # echo_websocket_urlpatterns,
-            #chat_websocket_urlpatterns,
-            cc_websocket_urlpatterns
+            chat_websocket_urlpatterns,
+            # cc_websocket_urlpatterns,
         )
     ),
 })
